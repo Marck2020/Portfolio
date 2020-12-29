@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+body {
+    margin:0;
+    padding:0;
+    font-family: Quicksand;
+    background-image: url(pics/about-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color:white;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 0.9fr 1.8fr;
+    grid-template-rows: 0.6fr 2.1fr 0.3fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "logo navbar"
+      "main main2"
+      "footer1 footer2";
+  }
+
+  /* GRID AREAS*/
+  .logo { 
+      grid-area: logo; 
+    }
+  
+  .navbar { 
+      grid-area: navbar; 
+    }
+  
+  .main { 
+      grid-area: main;
+
+    }
+  
+  .main2 { 
+      grid-area: main2;
+
+    }
+  
+  .footer1 {
+       grid-area: footer1; 
+    }
+  
+  .footer2 {
+       grid-area: footer2; 
+    }
+  
+      /* LOGO AREA*/
+
+
+      
+      /* NAVBAR/MENU AREA*/
+
+
+      nav {
+        margin-top: 50px;
+        margin-left:-18px;
+        position:absolute;
+        font-size: 30px;
+        text-align: center;
+        
+        
+
+      }
+
+      li {
+          list-style-type: none;
+          display: inline;
+          padding:20px;
+          }
+
+      a{
+          text-decoration: none;          
+          color:white;
+      }
+
+      a:hover {
+        color:red;
+        border-bottom: solid 1px red;
+    }
+
+
+      /*MAIN PAGE AREA (1)*/
+      h3 { 
+        position: absolute;
+        font-size: 50px;
+        margin: 0 auto;
+        margin-top: 80px;
+        margin-left:620px;
+        display:none;
+        }
+
+        
+
+        .about-me{
+          position: absolute;
+          margin-top: 200px;
+          margin-left: 60px;
+          padding-right: 15px;
+          line-height: 25px;
+          width:400px;
+          display:none;  
+
+        }
+        
+
+        .about-me2{
+          position: absolute;
+          margin-top: 400px;
+          margin-left:60px;
+          padding-right: 15px;
+          line-height: 25px;
+          width:400px;
+          display:none;
+        }
+        
+   #title {
+   border-bottom: white solid 1px;
+   margin-top: 120px;
+   margin-left: 60px;
+   display:none;
+}
+
+
+         /*MAIN PAGE AREA (2)*/
+  #luggage-icon {
+    position: absolute;
+    width:50px;
+    height:50px;
+    margin-top:200px;
+    margin-left: 650px;
+    display:none;
+  }
+
+  #airplane {
+    
+    position: absolute;
+    width:50px;
+    height:50px;
+    margin-top:150px;
+    margin-left:450px;
+    display:none;
+  }
+ 
+  #coding1 {
+    
+    position: absolute;
+    width:50px;
+    height:50px;
+    margin-top:300px;
+    margin-left:500px;
+    display:none;
+  }      
+
+  #globo2 {
+    
+    position: absolute;
+    width:50px;
+    height:50px;
+    margin-top:500px;
+    margin-left:500px;
+    display:none;
+  }
+
+  #globo3 {
+    
+    position: absolute;
+    width:50px;
+    height:50px;
+    margin-top:250px;
+    margin-left:880px;
+    display:none;
+  }
+
+  #icon-bridge {
+    
+    position: absolute;
+    width:50px;
+    height:50px;
+    margin-top:500px;
+    margin-left:800px;
+    display:none;
+  }
+
+  #laptop {
+    
+    position: absolute;
+    width:50px;
+    height:50px;
+    margin-top:350px;
+    margin-left:700px;
+    display:none;
+  }
+
+  #handshake {
+    
+    position: absolute;
+    width:50px;
+    height:50px;
+    margin-top:300px;
+    margin-left:350px;
+    display:none;
+  }
+
+
+         /*FOOTER 2 AREA*/
+         #linkedin-icon {
+          position: absolute;
+          margin-top:680px;
+          margin-left:200px;
+          width:40px;
+          height:40px;
+          border-radius: 50%;
+          opacity:0.5;
+          display:none;
+          
+      }
+
+      #linkedin-icon:hover {
+          background-color: black;            
+          border:1px solid black;
+          transition: 0.9s;
+          opacity:1;
+          display:none;
+
+      }
+
+      #xing-icon {
+          position:absolute;
+          margin-top:680px;
+          margin-left:300px;
+          width:40px;
+          height:40px;
+          border-radius: 50%;
+          opacity:0.5;
+          display:none;
+      }
+      #xing-icon:hover {
+          border:1px solid black;
+          background-color: black;
+          transition: 0.9s;
+          opacity:1;
+          display:none;
+      }
+
+      #gmail-icon {
+          position: absolute;
+          margin-top:680px;
+          margin-left:400px;
+          width:35px;
+          height:35px;
+          padding:5px;
+          border-radius: 50%;
+          opacity:0.5;
+          display:none;
+      }
+
+      #gmail-icon:hover {
+          border:1px solid black;
+          background-color: black;
+          transition: 0.9s;
+          opacity:1;
+          display:none;
+      }
+
+
+         /*MEDIA QUERIES FOR SMARTPHONES*/
+         @media only screen and (min-width: 200px) and (max-width:700px) {
+          .grid-container {
+              grid-template-columns:1fr;
+              grid-template-rows: 0.4fr 1fr 1.1fr 1.4fr;
+              grid-template-areas: 
+              "navbar"
+              "main2"
+              "main"
+              "footer2";
+      
+          }
+          nav {
+            display:block;
+            margin-top:20px;
+            margin-left:10px;
+            font-size: 20px;
+            margin-right:10px;
+        }
+
+        h3 {
+          font-size: 70px;
+        }
+        .about-me{
+          margin-top: 250px;
+          margin-left: 60px;
+          padding-right: 15px;
+          line-height: 30px;
+          width:400px;  
+          font-size: 20px;
+          
+          
+
+        }
+        .about-me2{
+          margin-top: 480px;
+          margin-left:60px;
+          padding-right: 15px;
+          line-height: 30px;
+          width:400px;
+          font-size: 20px;
+         
+        }
+
+
+#airplane {
+  margin-left:410px;
+  margin-top:650px;
+  
+}
+
+
+#handshake {
+  margin-left:210px;
+  margin-top:1000px;
+ 
+}
+
+#coding1 {
+
+  margin-left:50px;
+  margin-top: 1030px;
+  
+}
+
+#globo2 {
+  margin-left:180px;
+  margin-top: 860px;
+  
+}
+
+#globo3 {
+  margin-left:350px;
+  margin-top: 1030px;
+ 
+}
+
+#luggage-icon {
+  margin-left:100px;
+  margin-top: 680px;
+  
+}
+
+#icon-bridge {
+  margin-left:400px;
+  margin-top: 830px;
+  
+}
+
+
+#laptop {
+  margin-left:230px;
+  margin-top: 770px;
+  
+}
+        #linkedin-icon {
+          margin-top:1200px;
+          margin-left:110px;
+          
+      }
+      
+      #xing-icon {
+        
+        margin-top:1200px;
+          margin-left:210px;
+          
+      }
+      
+      #gmail-icon {
+        
+        margin-top:1200px;
+          margin-left:310px;
+      }
+      }

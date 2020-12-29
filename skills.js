@@ -1,0 +1,29 @@
+$(document).ready(function() {
+    $("h3").fadeIn(1500);
+    $(".container").fadeIn(1100);
+    $("#html-pic").fadeIn(1100);
+    $(".html-text").fadeIn(1000);
+    $("#css-pic").fadeIn(1000);
+    $(".css-text").fadeIn(1000);
+    $("#javascript-pic").fadeIn(1000);
+    $(".javascript-text").fadeIn(1000);
+    $(".what-i-do-container").fadeIn(1000);
+    $("#what-i-do-text").fadeIn(1000);
+    $(".list").fadeIn(1000);
+     $(".my-next-steps-container").fadeIn(1000);
+    $("#my-next-steps-text").fadeIn(1000);
+    $("#list1").fadeIn(1000);
+    $("#list2").fadeIn(1000);
+    $("#list3").fadeIn(1000);
+    $("#american-flag-pic").fadeIn(1000);
+    $(".english-text").fadeIn(1000);
+    $("#german-flag-icon").fadeIn(1000);
+    $(".german-text").fadeIn(1000);
+    $("#spanish-flag-icon").fadeIn(1000);
+    $(".spanish-text").fadeIn(1000);
+    $("#linkedin-icon").fadeIn(1000);
+    $("#gmail-icon").fadeIn(1000);
+    $("#linkedin-icon").fadeIn(1000);
+    $("#xing-icon").fadeIn(1000);
+    
+});
